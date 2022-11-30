@@ -43,4 +43,8 @@ int Ack (int m, int n)
     if (n > 0 && m > 0) return Ack(m-1, Ack(m,n-1));
     return 0;
 }
-System.Console.WriteLine (Ack(2, 3));
+System.Console.WriteLine("Please input the first positive integer number");
+int m = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Please input the second positive integer number");
+int n = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine (Ack(m, n));
