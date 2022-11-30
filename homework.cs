@@ -7,8 +7,8 @@ void NaturalNumbersAre(int n)
 {
     System.Console.WriteLine($"Your number is {n}");
     if (n > 1) NaturalNumbersAre(n - 1);
-    if (n<0) NaturalNumbersAre (n+1);
+    if (n < 0) NaturalNumbersAre(n + 1);
 }
 System.Console.WriteLine("Please input integer number");
-int num = Convert.ToInt32 (Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 NaturalNumbersAre(num);
